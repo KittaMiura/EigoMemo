@@ -15,6 +15,7 @@ Rails.application.routes.draw do
     get '/users/:id/profile' => 'users#show', as: 'profile'
     resources :users, only: [:edit, :update]
     resources :posts, only: [:new, :create, :index, :show, :edit, :update, :destroy]
+    resources :diaries
   end
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
