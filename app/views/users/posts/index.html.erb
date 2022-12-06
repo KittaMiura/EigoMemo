@@ -1,0 +1,15 @@
+<div class="content">
+    <h1>スペル一覧</h1>
+    
+    <p><%= link_to 'スペル登録', new_post_path %></p>
+    <p><%= link_to 'プロフィール', profile_path(current_user.id) %></p>
+    
+    <% @posts.each do |post| %>
+
+      <div class="spell">
+        <%= link_to post_path(post) do %><%= post.spell %><% end %>
+        <%= post.meaning %><br>
+      </div>
+    
+    <% end %>
+</div>

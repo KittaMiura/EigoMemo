@@ -1,0 +1,13 @@
+<div class="content">
+  <h1>users show</h1>
+  
+  <p>ユーザー名：<%= @user.name %></p>
+  
+  <p><%= link_to 'スペル一覧', posts_path %></p>
+  
+  <p><%= link_to 'スペル登録', new_post_path %></p>
+  
+  <p><%= link_to 'ユーザー情報編集', edit_user_registration_path %></p>
+
+  <p><%= link_to 'ログアウト', logout_path %></p>
+</div>
