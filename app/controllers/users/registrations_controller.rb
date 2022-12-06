@@ -38,11 +38,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
-  def detail
-    @user = User.find_by(id: params[:id])
-  end
-
-  # protected
+  protected
 
   # If you have extra params to permit, append them to the sanitizer.
   # def configure_sign_up_params
@@ -56,7 +52,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # The path used after sign up.
   def after_sign_up_path_for(resource)
-    "/user/#{current_user.id}"
+    profile_path(current_user.id)
   end
 
   # The path used after sign up for inactive accounts.
