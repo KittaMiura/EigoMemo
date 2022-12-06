@@ -1,0 +1,14 @@
+<div class="content">
+    <h1>単語一覧</h1>
+    
+    <p><%= link_to '単語登録', new_post_path %></p>
+    
+    <% @posts.each do |post| %>
+
+      <div class="spell">
+        <%= post.spell %>
+        <%= post.meaning %><br>
+      </div>
+    
+    <% end %>
+</div>
