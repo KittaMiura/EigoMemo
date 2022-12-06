@@ -1,7 +1,7 @@
 <div class="content">
-    <h1>スペル登録</h1>
+    <h1>スペル編集</h1>
     
-    <p><%= link_to '一覧にもどる', posts_path %></p>
+    <p><%= link_to '詳細にもどる', post_path(@post.id) %></p>
     
     <%= form_with model: @post do |f|%>
 
