@@ -3,7 +3,8 @@
     
     <p><%= link_to '一覧にもどる', posts_path %></p>
     <p><%= link_to 'スペル編集', edit_post_path %></p>
-    <p><%= link_to 'スペル削除', post_path, method: :DELETE %></p>
+    <p><%= link_to 'スペル削除', post_path, method: :DELETE, data: {confirm: "本当に削除しますか？"} %></p>
+    
       <div class="spell">
         <%= @post.spell %>
         <%= @post.meaning %><br>
