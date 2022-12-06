@@ -18,6 +18,29 @@ class Users::DiariesController < ApplicationController
     end
   end
   
+  def show
+    @diary = Diary.find(params[:id])
+  end
+  
+  def edit
+    @diary = Diary.find(params[:id])
+  end
+  
+  def update
+    @diary = Diary.find(params[:id])
+    if @diary.update(post_params)
+      redirect_to diary_path(@diary.id)
+    else
+      render :edit
+    end
+  end
+  
+  def destroy
+    @diary = Diary.find(params[:id])
+    @diary.destroy
+    redirect_to diaries_path
+  end
+  
   private
   
   def post_params

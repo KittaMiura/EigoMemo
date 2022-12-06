@@ -1,5 +1,5 @@
 <div class="content">
-  <h1>日記登録</h1>
+  <h1>日記編集</h1>
   
   <p><%= link_to '一覧にもどる', diaries_path %></p>
     
@@ -11,17 +11,17 @@
     </div>
   
     <div class="field">
-      <%= f.label :japanese, "まず日本語で3文以上日記を書こう！" %></br>
+      <%= f.label :japanese, "日本語部分" %></br>
       <%= f.text_area :japanese %>
     </div>
     
     <div class="field">
-      <%= f.label :english, "次に上で書いた文を英語で書こう！" %></br>
+      <%= f.label :english, "英語部分" %></br>
       <%= f.text_area :english %>
     </div>
   
     <div class="submit">
-      <%= f.submit "日記登録"%>
+      <%= f.submit "日記更新"%>
     </div>
   
   <% end %>
