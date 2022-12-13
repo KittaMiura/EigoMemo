@@ -7,9 +7,9 @@
   
   <p><%= @diary.title %></p>
   
-  <p><%= @diary.japanese %></p>
+  <p><%=safe_join(@diary.japanese.split("\n"),tag(:br))%></p>
   
-  <p><%= @diary.english %></p>
+  <p><%=safe_join(@diary.english.split("\n"),tag(:br))%></p>
   
 </div>
   
