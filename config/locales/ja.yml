@@ -1,6 +1,12 @@
 ---
 ja:
   activerecord:
+    models:
+      post: 単語登録
+    attributes:
+        post:
+          spell: スペル
+          meaning: 意味
     errors:
       messages:
         record_invalid: 'バリデーションに失敗しました: %{errors}'
