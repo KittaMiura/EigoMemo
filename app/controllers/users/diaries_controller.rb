@@ -44,7 +44,7 @@ class Users::DiariesController < ApplicationController
   private
   
   def post_params
-    params.require(:diary).permit(:title, :english, :japanese)
+    params.require(:diary).permit(:title, :japanese, :english, :english_answer)
   end
   
 end

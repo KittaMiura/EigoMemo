@@ -3,13 +3,21 @@
   
   <p><%= link_to '一覧に戻る', diaries_path %></p>
   <p><%= link_to '編集', edit_diary_path(@diary) %></p>
-  <p><%= link_to '削除', diary_path(@diary), method: :DELETE, data: {confirm: "本当に削除しますか？"} %></p>
+  <p class="mb-5"><%= link_to '削除', diary_path(@diary), method: :DELETE, data: {confirm: "本当に削除しますか？"} %></p>
   
-  <p><%= @diary.title %></p>
-  
-  <p><%=safe_join(@diary.japanese.split("\n"),tag(:br))%></p>
-  
-  <p><%=safe_join(@diary.english.split("\n"),tag(:br))%></p>
-  
+  <div class="row">
+    <div class="diary-area">
+      <h4 class="mt-2 pt-5"><%= @diary.title %></h4>
+    
+      <p class="mt-5"><%=safe_join(@diary.japanese.split("\n"),tag(:br))%></p>
+      
+      <p>_________________________________________________</p>
+    
+      <p class="mt-4"><%=safe_join(@diary.english.split("\n"),tag(:br))%></p>
+      
+      <p>_________________________________________________</p>
+      
+      <p class="mt-5 pb-5"><%=safe_join(@diary.english_answer.split("\n"),tag(:br))%></p>
+    </div>
+  </div>
 </div>
-  

@@ -15,8 +15,9 @@ ActiveRecord::Schema.define(version: 2022_12_06_201401) do
   create_table "diaries", force: :cascade do |t|
     t.integer "user_id", null: false
     t.string "title"
-    t.text "english"
     t.text "japanese"
+    t.text "english"
+    t.text "english_answer"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_diaries_on_user_id"

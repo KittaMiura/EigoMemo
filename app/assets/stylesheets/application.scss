@@ -116,8 +116,20 @@ form {
   border-bottom: 1px dotted #8c8c8c;
 }
 
+.alert {
+  text-align: center;
+}
+
 .content {
   text-align: center;
+}
+
+.diary-area {
+  text-align: center;
+  background-color: white;
+  height: auto;
+  width: 500px;
+  margin: auto;
 }
 
 .diary-field-1 {
