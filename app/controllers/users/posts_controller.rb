@@ -1,4 +1,6 @@
 class Users::PostsController < ApplicationController
+  before_action :authenticate_user!
+  before_action :correct_user, only: [:show, :edit, :update]
   
   def new
     @post = Post.new
@@ -45,6 +47,13 @@ class Users::PostsController < ApplicationController
   
   def post_params
     params.require(:post).permit(:spell, :meaning)
+  end
+  
+  def correct_user
+    @post = Post.find(params[:id])
+    if current_user.id != @post.user_id
+      redirect_to posts_path, notice: "他のユーザーが登録したスペルは見れません…！"
+    end
   end
   
 end
