@@ -35,6 +35,14 @@ body {
 /* Form Layout */
 .form-wrapper {
   background: #fafafa;
+  
+.body {
+  background-color: #f5deb3;
+}
+
+/* Form Layout */
+.form-wrapper {
+  background: #f5bc49;
   margin: 3em auto;
   padding: 0 1em;
   max-width: 370px;
@@ -113,4 +121,30 @@ form {
 
 .content {
   text-align: center;
+}
+  
+.alert {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.content {
+  text-align: center;
+}
+
+.diary-area {
+  text-align: center;
+  background-color: white;
+  height: auto;
+  width: 500px;
+  margin: auto;
+}
+
+.diary-field-1 {
+  width: auto;
+}
+
+.diary-field {
+  width: 500px;
+  height: 100px;
 }
