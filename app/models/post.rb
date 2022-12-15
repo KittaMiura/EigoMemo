@@ -1,7 +1,5 @@
 class Post < ApplicationRecord
   belongs_to :user
-<<<<<<< HEAD
-=======
   
   validates :spell, presence: true
   validates :meaning, presence: true
@@ -10,5 +8,4 @@ class Post < ApplicationRecord
     @post = Post.where("spell LIKE?","#{word}%")
   end
   
->>>>>>> develop
 end

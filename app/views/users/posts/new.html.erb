@@ -4,16 +4,6 @@
     <p><%= link_to '一覧にもどる', posts_path %></p>
     
     <%= form_with model: @post do |f|%>
-<<<<<<< HEAD
-
-      <div class="field">
-        <%= f.label :spell, "スペル" %></br>
-        <%= f.text_field :spell%>
-      </div>
-    
-      <div class="field">
-        <%= f.label :meaning, "意味" %></br>
-=======
     
     <div class="align-items-center">
       <%= render 'shared/error_messages', model: f.object %>
@@ -26,7 +16,6 @@
     
       <div class="field mt-3">
         <%= f.label :meaning, "意味" %><br>
->>>>>>> develop
         <%= f.text_area :meaning%>
       </div>
     
