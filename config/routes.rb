@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     resources :users, only: [:edit, :update]
     resources :posts, only: [:new, :create, :index, :show, :edit, :update, :destroy]
     resources :diaries
+    get 'search' => 'searches#search'
   end
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
