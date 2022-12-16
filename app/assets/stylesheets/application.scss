@@ -147,4 +147,15 @@ form {
 
 .spell26 {
   font-family: 'Fredoka One', cursive;
+  margin: auto;
+  border-collapse: separate;
+}
+
+.spell26 td {
+  border: solid 1px;
+  padding: 10px;
+}
+
+.spell26 a {
+  color: green;
 }

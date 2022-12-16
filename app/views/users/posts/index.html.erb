@@ -4,35 +4,43 @@
     <p><%= link_to 'スペル登録', new_post_path %></p>
     <p><%= link_to 'プロフィール', profile_path(current_user.id) %></p>
     
-    <p class="spell26">
-        <a href="/spellA">A</a>
-        <a href="/spellB">B</a>
-        <a href="/spellC">C</a>
-        <a href="/spellD">D</a>
-        <a href="/spellE">E</a>
-        <a href="/spellF">F</a>
-        <a href="/spellG">G</a>
-        <a href="/spellH">H</a>
-        <a href="/spellI">I</a>
-        <a href="/spellJ">J</a>
-        <a href="/spellK">K</a>
-        <a href="/spellL">L</a>
-        <a href="/spellM">M</a>
-        <a href="/spellN">N</a>
-        <a href="/spellO">O</a>
-        <a href="/spellP">P</a>
-        <a href="/spellQ">Q</a>
-        <a href="/spellR">R</a>
-        <a href="/spellS">S</a>
-        <a href="/spellT">T</a>
-        <a href="/spellU">U</a>
-        <a href="/spellV">V</a>
-        <a href="/spellW">W</a>
-        <a href="/spellX">X</a>
-        <a href="/spellY">Y</a>
-        <a href="/spellZ">Z</a>
-    </p>
+    <h4>頭文字検索</h4>
     
+    <table class="spell26 my-3">
+        <tr>
+            <td><a href="/spellA">A</a></td>
+            <td><a href="/spellB">B</a></td>
+            <td><a href="/spellC">C</a></td>
+            <td><a href="/spellD">D</a></td>
+            <td><a href="/spellE">E</a></td>
+            <td><a href="/spellF">F</a></td>
+            <td><a href="/spellG">G</a></td>
+            <td><a href="/spellH">H</a></td>
+            <td><a href="/spellI">I</a></td>
+        </tr>
+        <tr>
+            <td><a href="/spellJ">J</a></td>
+            <td><a href="/spellK">K</a></td>
+            <td><a href="/spellL">L</a></td>
+            <td><a href="/spellM">M</a></td>
+            <td><a href="/spellN">N</a></td>
+            <td><a href="/spellO">O</a></td>
+            <td><a href="/spellP">P</a></td>
+            <td><a href="/spellQ">Q</a></td>
+            <td><a href="/spellR">R</a></td>
+        </tr>
+        <tr>
+            <td><a href="/spellS">S</a></td>
+            <td><a href="/spellT">T</a></td>
+            <td><a href="/spellU">U</a></td>
+            <td><a href="/spellV">V</a></td>
+            <td><a href="/spellW">W</a></td>
+            <td><a href="/spellX">X</a></td>
+            <td><a href="/spellY">Y</a></td>
+            <td><a href="/spellZ">Z</a></td>
+            <td></td>
+        </tr>
+    </table>
     
     <%= render 'users/posts/spell', posts: @posts %>
 </div>
