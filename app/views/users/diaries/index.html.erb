@@ -1,15 +1,21 @@
 <div class="content">
-  <h1>日記一覧</h1>
-  
-  <p><%= link_to '日記登録', new_diary_path %></p>
-  <p><%= link_to 'プロフィール', profile_path(current_user.id) %></p>
+  <div class="row">
     
-  <% @diaries.each do |diary| %>
-
-    <div class="diary">
-      <%= link_to diary_path(diary) do %><%= diary.title %><% end %>
-      <%= l diary.created_at, format: :long %><br>
+    <div class='col-sm-4 mb-3'>
+      <%= render 'users/users/menu' %>
+    </div>
+      
+    <div class='col-sm-4'>
+      <h1>日記一覧</h1>
+      <table class="spell mt-4">
+        <% @diaries.each do |diary| %>
+        <tr>
+          <td><%= link_to diary_path(diary) do %><%= diary.title %><% end %></td>
+          <td><%= l diary.created_at, format: :long %></td>
+        </tr>
+        <% end %>
+      </table>
     </div>
     
-  <% end %>
+  </div>
 </div>

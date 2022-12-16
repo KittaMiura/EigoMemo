@@ -6,9 +6,11 @@
   <% end %>
 </div>
 
-<% posts.each do |post| %>
-  <div class="spell">
-    <%= link_to post_path(post) do %><%= post.spell %><% end %>
-    <%= post.meaning %><br>
-  </div>
-<% end %>
+  <table class="spell mt-4">
+    <% posts.each do |post| %>
+    <tr>
+      <td><%= link_to post_path(post) do %><%= post.spell %><% end %></td>
+      <td><%= post.meaning %></td>
+    </tr>
+    <% end %>
+  </table>

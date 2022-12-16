@@ -54,11 +54,11 @@ class Users::SearchesController < ApplicationController
   end
   
   def spellN
-    @posts = Post.where("spell LIKE 'm%'").where(user_id: current_user.id).includes(:user).order(:spell)
+    @posts = Post.where("spell LIKE 'n%'").where(user_id: current_user.id).includes(:user).order(:spell)
   end
   
   def spellM
-    @posts = Post.where("spell LIKE 'n%'").where(user_id: current_user.id).includes(:user).order(:spell)
+    @posts = Post.where("spell LIKE 'm%'").where(user_id: current_user.id).includes(:user).order(:spell)
   end
   
   def spellO

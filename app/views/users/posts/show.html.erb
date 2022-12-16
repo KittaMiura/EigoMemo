@@ -1,13 +1,14 @@
 <div class="content">
-    <h1>スペル詳細</h1>
-    
-    <p><%= link_to '一覧にもどる', posts_path %></p>
-    <p><%= link_to 'スペル編集', edit_post_path %></p>
-    <p><%= link_to 'スペル削除', post_path, method: :DELETE, data: {confirm: "本当に削除しますか？"} %></p>
-    
-      <div class="spell">
-        <%= @post.spell %>
-        <%= @post.meaning %><br>
-      </div>
-    
+  <h1>スペル詳細</h1>
+  
+  <p><%= link_to '一覧にもどる', posts_path %></p>
+  <p><%= link_to 'スペル編集', edit_post_path %></p>
+  <p><%= link_to 'スペル削除', post_path, method: :DELETE, data: {confirm: "本当に削除しますか？"} %></p>
+  
+  <div class="spellshow mt-5">
+    <p>スペル</p>
+    <h2><%= @post.spell %></h2>
+    <p class="mt-5">意味</p>
+    <h2><%= @post.meaning %></h2>
+  </div>
 </div>

@@ -159,3 +159,27 @@ form {
 .spell26 a {
   color: green;
 }
+
+.spell {
+  margin: auto;
+  border-collapse: separate;
+}
+
+.spell td {
+  border: solid 1px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.spell a {
+  color: green;
+}
+
+.spellshow {
+  text-align: center;
+  background-color: white;
+  height: auto;
+  width: 500px;
+  margin: auto;
+  padding: 10px;
+}
