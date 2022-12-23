@@ -1,17 +1,20 @@
 <div class="content">
   <h1>プロフィール</h1>
+  <div class="row">
+    <div class="col-12">
+      <p>ユーザー名：<%= @user.name %></p>
   
-  <p>ユーザー名：<%= @user.name %></p>
-  
-  <p><%= link_to 'スペル一覧', posts_path %></p>
-  
-  <p><%= link_to 'スペル登録', new_post_path %></p>
-  
-  <p><%= link_to '日記一覧', diaries_path %></p>
-  
-  <p><%= link_to '日記登録', new_diary_path %></p>
-  
-  <p><%= link_to 'ユーザー情報編集', edit_user_registration_path %></p>
-
-  <p><%= link_to 'ログアウト', logout_path %></p>
+      <p><%= link_to 'スペル一覧', posts_path, class: 'btn text-white text-nowrap col-1', style: "background-color:#ff7b00" %></p>
+      
+      <p><%= link_to 'スペル登録', new_post_path, class: 'btn text-white text-nowrap col-1', style: "background-color:#ff7b00" %></p>
+      
+      <p><%= link_to '日記一覧', diaries_path, class: 'btn text-white text-nowrap col-1', style: "background-color:#ff5c5c" %></p>
+      
+      <p><%= link_to '日記登録', new_diary_path, class: 'btn text-white text-nowrap col-1', style: "background-color:#ff5c5c" %></p>
+      
+      <p><%= link_to 'ユーザー情報編集', edit_user_registration_path, class: 'btn btn-success' %></p>
+    
+      <p><%= link_to 'ログアウト', logout_path, class: 'btn btn-secondary text-white text-nowrap col-1' %></p>
+    </div>
+  </div>
 </div>

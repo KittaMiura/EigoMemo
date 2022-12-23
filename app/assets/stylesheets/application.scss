@@ -19,6 +19,9 @@
 // Font : Fredoka One
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
+// Font : Rampart One
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
 /* fontawesome */
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 [class*="fontawesome-"]:before {
@@ -43,7 +46,7 @@ body {
 /* Form Layout */
 .form-wrapper {
   background: #f5bc49;
-  margin: 3em auto;
+  margin: 20px auto;
   padding: 0 1em;
   max-width: 370px;
 }
@@ -126,6 +129,22 @@ form {
 
 .content {
   text-align: center;
+}
+
+.site-title {
+  background-color: orange;
+  font-family: 'Rampart One', cursive;
+  width: 300px;
+  height: 55px;
+  margin: auto;
+}
+
+.btn {
+  padding: 14px 24px;
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .diary-area {
