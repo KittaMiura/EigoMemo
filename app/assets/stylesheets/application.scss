@@ -131,12 +131,27 @@ form {
   text-align: center;
 }
 
+.sticky-top {
+  background-color: orange;
+}
+
 .site-title {
   background-color: orange;
   font-family: 'Rampart One', cursive;
   width: 300px;
   height: 55px;
   margin: auto;
+}
+
+@media screen and (min-width: 481px) {
+  .header-menu {
+    display: none;
+  }
+}
+
+.site-title-header {
+  font-family: 'Rampart One', cursive;
+  font-size: 30px;
 }
 
 .btn {

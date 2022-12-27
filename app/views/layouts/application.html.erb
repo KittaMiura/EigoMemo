@@ -11,8 +11,13 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="body mt-3 mb-5">
+  <body class="body mb-5">
+    <div class="header-menu">
+      <%= render 'shared/header' %>
+    </div>
     <%= render 'shared/flash' %>
-    <%= yield %>
+    <div class="mt-5">
+      <%= yield %>
+    </div>
   </body>
 </html>

@@ -1,0 +1,41 @@
+  <header class="sticky-top fixed-top">
+      <nav class="mb-3 navbar navbar-expand-md navbar-dark text-white">
+        <a>
+          <%= link_to '英語メモDiary', root_path, data: {"turbolinks" => false}, class: "mb-3 site-title-header text-dark" %>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav text-center">
+            <% if user_signed_in? %>
+              <li class="nav-item">
+                <%= link_to 'スペル一覧', posts_path, class: "text-dark" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'スペル登録', new_post_path, class: "text-dark" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to '日記一覧', diaries_path, class: "text-dark" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to '日記登録', new_diary_path, class: "text-dark" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'ユーザー情報編集', edit_user_registration_path, class: "text-dark" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "text-dark" %>
+              </li>
+            <% else %>
+              <li class="nav-item">
+                <%= link_to "新規登録", new_user_registration_path, class: "text-dark" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to "ログイン", new_user_session_path, class: "text-dark" %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </nav>
+    </header>
