@@ -147,6 +147,12 @@ form {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 481px) {
+  .menu {
+    display: none;
+  }
+}
+
 .diary-area {
   text-align: center;
   background-color: white;
@@ -202,3 +208,4 @@ form {
   margin: auto;
   padding: 10px;
 }
+
